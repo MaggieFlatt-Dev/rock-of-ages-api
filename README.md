@@ -26,3 +26,15 @@ There are no views, models, or serializers in this boilerplate project. The only
       "last_name": "Straytor"
    }
    ```
+
+# Test Curl Commands
+
+## GET Types
+```bash
+curl --header "Authorization: Token 08631fce3b7f7ca5f6f24f1152a5a74c7b742ccf" 'http://localhost:8000/types' | jq
+```
+
+## GET Rocks
+```bash
+curl --header "Authorization: Token 08631fce3b7f7ca5f6f24f1152a5a74c7b742ccf" 'http://localhost:8000/rocks' | jq
+```
