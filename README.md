@@ -38,10 +38,3 @@ curl --header "Authorization: Token 08631fce3b7f7ca5f6f24f1152a5a74c7b742ccf" 'h
 ```bash
 curl --header "Authorization: Token 08631fce3b7f7ca5f6f24f1152a5a74c7b742ccf" 'http://localhost:8000/rocks' | jq
 ```
-
-class RockTypeSerializer(serializers.ModelSerializer):
-    """JSON serializer"""
-
-    class Meta:
-        model = Type
-        fields = ( 'label', )
