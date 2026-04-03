@@ -31,10 +31,22 @@ There are no views, models, or serializers in this boilerplate project. The only
 
 ## GET Types
 ```bash
-curl --header "Authorization: Token 08631fce3b7f7ca5f6f24f1152a5a74c7b742ccf" 'http://localhost:8000/types' | jq
+curl --header "Authorization: Token 6511e9715452717ce47fd22946efa1423a9b166a" 'http://localhost:8000/types' | jq
 ```
 
 ## GET Rocks
 ```bash
-curl --header "Authorization: Token 08631fce3b7f7ca5f6f24f1152a5a74c7b742ccf" 'http://localhost:8000/rocks' | jq
+curl --header "Authorization: Token 6511e9715452717ce47fd22946efa1423a9b166a" 'http://localhost:8000/rocks' | jq
+```
+
+## GET users rocks
+```bash
+curl --header "Authorization: Token 6511e9715452717ce47fd22946efa1423a9b166a" 'http://localhost:8000/rocks?owner=current' | jq
+```
+
+## DELETE rock
+```bash
+curl -v --header "Authorization: Token 6511e9715452717ce47fd22946efa1423a9b166a" \
+  --request DELETE \
+  'http://localhost:8000/rocks/1' | jq
 ```
